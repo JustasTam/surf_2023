@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "e2e": "npx playwright test e2e --config=configs/base-playwright.config.ts",
+    "e2e-head": "npx playwright test e2e --headed --config=configs/base-playwright.config.ts",
     "all": "npx playwright test --config=configs/base-playwright.config.ts",
     "report": "allure generate 'allure-results' -o allure-report --clean && allure open"
   },
@@ -14,6 +15,7 @@
   "devDependencies": {
     "@playwright/test": "^1.39.0",
     "@types/node": "^20.8.10",
-    "allure-playwright": "^2.9.2"
+    "allure-playwright": "^2.9.2",
+    "lodash": "^4.17.21"
   }
 }
